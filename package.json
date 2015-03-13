@@ -1,5 +1,5 @@
 {
-  "name": "React Bootstrap Native Slider",
+  "name": "react-bootstrap-native-slider",
   "version": "1.0.0",
   "description": "Native Slider with Boostrap Slider failover component for React",
   "scripts": {
