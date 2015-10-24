@@ -29,7 +29,7 @@ var BootstrapSlider = React.createClass({
     componentDidMount: function () {
         var that = this;
         $.fn.bootstrapSlider = $.fn.bootstrapSlider || $.fn.slider;
-        this.mySlider = $(this.getDOMNode()).bootstrapSlider({
+        this.mySlider = $(ReactDOM.findDOMNode(this)).bootstrapSlider({
             "tooltip": this.props.tooltip || "show"
         });
         this.updateSliderValues();
@@ -86,10 +86,10 @@ var SliderNativeBootstrap = React.createClass({
             // type is set to.
             var input = document.createElement('input');
             input.setAttribute('type', 'range');
-            this.supportsRange = input.type !== "text" ? true : false;        
+            this.supportsRange = input.type !== "text" ? true : false;
         }
 
-        
+
     },
     render: function () {
         var polyfill = typeof this.props.polyfill == "undefined" ? true : this.props.polyfill;
@@ -108,7 +108,7 @@ var SliderNativeBootstrap = React.createClass({
         else {
             return (
                 <BootstrapSlider {...this.props} />
-            );            
+            );
         }
     }
 });
