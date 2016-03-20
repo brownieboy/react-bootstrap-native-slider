@@ -14,7 +14,7 @@ Here's how the native JavaScript control is rendered in my plug-in:
         return (
             <input id="mySlider"
                 type="range"
-                value={this.props.value}
+                currentValue={this.props.value}
                 min={this.props.min}
                 max={this.props.max}
                 onInput={this.props.handleChange}
