@@ -29,7 +29,7 @@ It's about as simple a rendering as you could want in React.  You'd pass some pr
 ####Internet Explorer Problems
 The HTML5 slider control has problems on internet explorer:
 1.  It isn't supported on IE9
-1.  It's poorly implemented visually on IE10 and above.  The part that you have to grap with your mouse, or finger on tablet, to actually slide the values is way too small, IMHO. (Check the **oninput in IE11** video on [this Impressive Webs article](http://www.impressivewebs.com/onchange-vs-oninput-for-range-sliders/) to see what I mean).
+1.  It's poorly implemented visually on IE10 and above.  The part that you have to grab with your mouse, or finger on tablet, to actually slide the values is way too small, IMHO. (Check the **oninput in IE11** video on [this Impressive Webs article](http://www.impressivewebs.com/onchange-vs-oninput-for-range-sliders/) to see what I mean).
 
 In the end, I made an executive decision in my React Bootstrap Slider component: I don't display the native HTML5 slider control on IE.
 
@@ -74,20 +74,7 @@ If the optional parameter **disabled** is included, and is set to "disabled", th
 
 
 ####Forcing the Bootstrap or Native version all the time
-If you want to force the HTML5 native slider control all the time and never see the Bootstrap version, then you can use the module's named imports to import that actual class/function.  Here's how to do it in ES6:
-
-    import ReactNativeSlider from 'react-bootstrap-native-slider';
-
-Correspondingly, if you want to force the Bootstrap version all the time, then import _its_ module like so in ES6:
-
-    import ReactBootstrapSlider from 'react-bootstrap-native-slider';
-
-Here's how you would do the same using CommonJS:
-
-    var reactNativeBootstrapSliderObj = require('./react-native-bootstrap-slider.jsx');
-    var ReactNativeSlider = reactNativeBootstrapSliderObj.ReactNativeSlider;
-    var ReactBootstrapSlider  = reactNativeBootstrapSliderObj.ReactBootstrapSlider;
-    var ReactNativeBootstrapSlider = reactNativeBootstrapSliderObj.ReactNativeBootstrapSlider;
+This package is basically a front-end for two other of my npm packages:  [react-html5-slider](https://www.npmjs.com/package/react-html5-slider) and [react-bootstrap-slider](https://www.npmjs.com/package/react-bootstrap-slider).  Install one or other of those packages, in preference to react-native-bootstrap-slider if you want to force of the native slider or the Bootstrap slider
 
 
 ##Development
@@ -109,17 +96,13 @@ To build the demo, issue:
 
 Wepback will build the JavaScript files for the demo in the /demo/js/ folder.  Your code will go in the slider-bundle.min.js file.  Any 3rd-party code (jQuery, Bootstrap etc) goes into the vendor.min.js file.  Source maps are generated both.
 
-###Demo
-Is [here](http://users.on.net/~mikeandgeminoz/code/react.bootstrap.slidertest/index.html).
-
-On load, the slider range is 1,000 to 20,000 with a step of 1,000.
-
-Click on the **Change axes!** button, and the slider range changes from 0 to 2,000 with a step of 100.
+Note: as of version 2.0.0, most of the heavy coding was devolved to two new npm packages: [react-html5-slider](https://www.npmjs.com/package/react-html5-slider) and [react-bootstrap-slider](https://www.npmjs.com/package/react-bootstrap-slider).
 
 
 ##Updates
-Version 1.1.6: April 9 2016.  Changed to point to renamed Git repository.  (No actual code changes.)
-Version 1.1.5: April 9 2016.  Updated to React 15.
+* Version 2.0.0: April 10 2016.  Major rewrite.  Moved most of code to two new npm packages: react-html5-slider and react-bootstrap-slider.  This package is now a front-end to dynamically switch between those two.
+* Version 1.1.6: April 9 2016.  Changed to point to renamed Git repository.  (No actual code changes.)
+* Version 1.1.5: April 9 2016.  Updated to React 15.
 
 
 

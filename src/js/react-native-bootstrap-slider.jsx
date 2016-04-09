@@ -1,12 +1,14 @@
 /* eslint-env browser */
 
 import React from "react";
-import ReactDOM from "react-dom";
-import Slider from "bootstrap-slider";
+// import ReactDOM from "react-dom";
+// import Slider from "bootstrap-slider";
 import browser from "detect-browser";
-import es6BindAll from "es6bindall";
+// import es6BindAll from "es6bindall";
+import ReactNativeSlider from "react-html5-slider";
+import ReactBootstrapSlider from "react-bootstrap-slider";
 
-export class ReactNativeSlider extends React.Component {
+/* export class ReactNativeSlider extends React.Component {
     render() {
         return ( < input type = "range"
             value = { this.props.value }
@@ -70,7 +72,7 @@ export class ReactBootstrapSlider extends React.Component {
             }
         }
     }
-}
+} */
 
 
 export class ReactNativeBootstrapSlider extends React.Component {
