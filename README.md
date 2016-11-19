@@ -1,5 +1,8 @@
 # React Bootstrap Native Slider
 
+#PROJECT DEPRECATED#
+I am no longer updating this package.  The code (without the native part) carries on as [react-bootstrap-slider](https://github.com/brownieboy/react-bootstrap-slider), which I am continuing to develop.
+
 ###Overview
 A ReactJS wrapper for the HTML5 input type="range" slider component, but using [seiyria's Bootstrap Slider component](https://github.com/seiyria/bootstrap-slider) as a polyfill where the HTML5 version is not available (IE 9) or otherwise suffers from a problematic implementation (any other version of IE).
 
