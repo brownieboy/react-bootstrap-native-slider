@@ -103,6 +103,7 @@ Note: as of version 2.0.0, most of the heavy coding was devolved to two new npm 
 
 
 ##Updates
+* Version 2.0.1: Nov 20 2016.  Project deprecated in favour of react-bootstrap-slider.  No actual code changes.
 * Version 2.0.0: April 10 2016.  Major rewrite.  Moved most of code to two new npm packages: react-html5-slider and react-bootstrap-slider.  This package is now a front-end to dynamically switch between those two.
 * Version 1.1.6: April 9 2016.  Changed to point to renamed Git repository.  (No actual code changes.)
 * Version 1.1.5: April 9 2016.  Updated to React 15.
